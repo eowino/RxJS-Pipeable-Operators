@@ -22,3 +22,6 @@ The most common scenario for creating custom operators is to reuse the built-in 
 
 ### implement-map-from-scratch
 While it's great to use the RxJS built-in operators, it's also important to realize you now have the knowledge to write them by yourself if needed. The map operator turns out to be a simple MapSubscriber which takes a function and applies it to the value passed to next.
+
+### chain-operators-using-custom-pipe
+Instead of writing complex operators, it's usually best to write simple, single-purpose operators then chain them together when necessary. The pipe function takes functions as arguments, invokes each function with the value, then passes the returned result on to the next function.
