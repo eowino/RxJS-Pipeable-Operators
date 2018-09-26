@@ -11,6 +11,8 @@ The Subscriber class exposes a _next method which you can override to handle how
 ### connect-source-to-subscriber
 Observable's pipe method is all about connecting a source to a subscriber through an operator. While you wouldn't normally manually invoke connect the pieces together the way this lesson does, it's important to understand how the internals work before working with the RxJS api.
 
-
 ### connect-source-to-subscriber-with-lift
 The lift method on each source hides away the internals of RxJS so you can simply connect a source to the subscriber you're working with. The lift method take an object with a call function with subscriber and source arguments, then it's up to you how you want to connect them together.
+
+### reusable-operator-from-scratch
+With knowledge of extending Subscriber and using source.lift to connect a source to a subscriber, you can now create your own operators by writing functions that return a source.lift call. This lesson creates a simple "multiply" operator in RxJS.
