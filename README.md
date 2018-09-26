@@ -19,3 +19,6 @@ With knowledge of extending Subscriber and using source.lift to connect a source
 
 ### create-operators-from-existing-operators
 The most common scenario for creating custom operators is to reuse the built-in operators shipped with RxJS. You'll find yourself re-using map, filter, and others will solve most of the problems you come across.
+
+### implement-map-from-scratch
+While it's great to use the RxJS built-in operators, it's also important to realize you now have the knowledge to write them by yourself if needed. The map operator turns out to be a simple MapSubscriber which takes a function and applies it to the value passed to next.
