@@ -1,3 +1,4 @@
+// @ts-check
 import { from, Subscriber } from 'rxjs';
 import * as Util from './util';
 
