@@ -16,3 +16,6 @@ The lift method on each source hides away the internals of RxJS so you can simpl
 
 ### reusable-operator-from-scratch
 With knowledge of extending Subscriber and using source.lift to connect a source to a subscriber, you can now create your own operators by writing functions that return a source.lift call. This lesson creates a simple "multiply" operator in RxJS.
+
+### create-operators-from-existing-operators
+The most common scenario for creating custom operators is to reuse the built-in operators shipped with RxJS. You'll find yourself re-using map, filter, and others will solve most of the problems you come across.
