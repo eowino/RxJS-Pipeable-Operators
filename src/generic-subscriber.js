@@ -16,10 +16,4 @@ observable1$.subscribe({
 });
 
 // example 3 - subscriber object
-const subscriber = {
-  next: value => console.log(value),
-  complete: () => console.log('Completed!'),
-  error: value => console.log(value)
-};
-
-observable2$.subscribe(subscriber);
+observable2$.subscribe(Util.subscriber);
