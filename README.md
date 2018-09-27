@@ -1,5 +1,7 @@
 # RxJS Pipeable Operators
 
+course: [egghead.io](https://egghead.io/courses/build-your-own-rxjs-pipeable-operators)
+
 ## Order of progression
 
 ### generic-subscriber
@@ -25,3 +27,6 @@ While it's great to use the RxJS built-in operators, it's also important to real
 
 ### chain-operators-using-custom-pipe
 Instead of writing complex operators, it's usually best to write simple, single-purpose operators then chain them together when necessary. The pipe function takes functions as arguments, invokes each function with the value, then passes the returned result on to the next function.
+
+### implement-merge-map
+Understanding sources and subscribers makes it much easier to understand what's going on with mergeMap under the hood. Where a typical operator invokes destination.next directly, mergeMap wraps destination.next inside of a new source/subscriber combo so there's an "outer" next and an "inner" next.
